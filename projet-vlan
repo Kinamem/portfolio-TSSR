@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet VLANs - Mon Portfolio TSSR</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        header { background: #333; color: white; text-align: center; padding: 20px; }
+        nav { text-align: center; padding: 10px; }
+        nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; }
+        .container { width: 80%; margin: auto; padding: 20px; }
+        footer { text-align: center; padding: 10px; background: #333; color: white; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Projet VLANs - Configuration et Sécurisation</h1>
+    </header>
+    <nav>
+        <a href="index.html">Retour à l'accueil</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>Enoncé du projet</h2>
+            <p>
+                Votre entreprise est en pleine croissance et doit emménager dans de nouveaux locaux plus grands...
+                (l'énoncé complet ici, comme tu l'avais précédemment donné)
+            </p>
+        </section>
+        <section id="plan_adressage">
+            <h2>Plan d'adressage IP</h2>
+            <p>Ajoute ici ton plan d'adressage, ton schéma, etc.</p>
+        </section>
+        <section id="config_vlans">
+            <h2>Configuration des VLANs</h2>
+            <p>Explique ici comment tu as configuré les VLANs sur Cisco Packet Tracer, par exemple...</p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 - Mon Portfolio TSSR</p>
+    </footer>
+</body>
+</html>
