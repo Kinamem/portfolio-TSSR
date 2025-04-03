@@ -33,6 +33,59 @@
             <div class="project">
                 <h3>Configuration de VLANs</h3>
                 <p>Mise en place d’un réseau avec VLANs sous Cisco Packet Tracer.</p>
+                 <h4>Énoncé de l'exercice :</h4>
+            <p>Votre entreprise est en pleine croissance et doit emménager dans de nouveaux locaux plus grands. Vous profitez de l'installation dans ces nouveaux locaux pour revoir la configuration du réseau et améliorer la sécurité.</p>
+            <p>L’entreprise est constituée de cinq départements :</p>
+            <ul>
+                <li>Le service Relations Humaines (qui inclut la direction) (5 personnes)</li>
+                <li>Le service comptabilité (3 personnes)</li>
+                <li>Le service commercial (13 personnes)</li>
+                <li>Les équipes opérationnelles (52 personnes)</li>
+                <li>L’équipe informatique (2 personnes) <- c’est votre équipe !</li>
+            </ul>
+            <p>L’entreprise a aussi 3 départements sur un site distant :</p>
+            <ul>
+                <li>Le service R&D (9 personnes)</li>
+                <li>Le service des achats (27 personnes)</li>
+                <li>Le service SAV (7 personnes)</li>
+            </ul>
+            <p>Le réseau de l’entreprise est sur <strong>192.168.100.0/24</strong>, le réseau distant est sur <strong>172.16.0.0/24</strong>, et le réseau intersites est sur <strong>10.0.0.0/8</strong>.</p>
+            <p><strong>À faire :</strong></p>
+            <ul>
+                <li>Définir un plan d’adressage IP pour chaque site</li>
+                <li>Faire un schéma sur draw.io</li>
+                <li>Sur Cisco PacketTracer :
+                    <ul>
+                        <li>Configurer les VLAN sur chaque site</li>
+                        <li>Configurer le routage InterVLAN sur chaque site</li>
+                        <li>Faire communiquer les deux sites via des « ping »</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4>Topologie du réseau :</h4>
+            <a href="vlan_topology.png" target="_blank">
+                <img src="vlan_topology_thumb.png" alt="Topologie réseau" />
+            </a>
+            <p><a href="vlan_topology.png" target="_blank">Voir le diagramme complet</a></p>
+
+            <h4>Commandes utilisées :</h4>
+            <pre>
+vlan 10
+name "Informatique"
+vlan 20
+name "Comptabilité"
+vlan 30
+name "Commercial"
+vlan 40
+name "Opérationnel"
+vlan 50
+name "RH"
+            </pre>
+
+            <h4>Tests effectués :</h4>
+            <p>Des tests ont été réalisés pour vérifier l'isolement des VLANs et la connectivité entre les différents départements.</p>
+            <a href="ping_test_results.png" target="_blank">Voir les résultats du test de ping</a>
             </div>
             <div class="project">
                 <h3>Installation d’un serveur Web</h3>
