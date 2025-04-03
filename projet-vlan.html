@@ -3,63 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet VLANs - Mon Portfolio TSSR</title>
+    <title>Configuration Réseau</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background: #333; color: white; text-align: center; padding: 20px; }
-        nav { text-align: center; padding: 10px; }
-        nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; }
-        .container { width: 80%; margin: auto; padding: 20px; }
-        footer { text-align: center; padding: 10px; background: #333; color: white; margin-top: 20px; }
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+        h1, h2 { color: #2c3e50; }
+        ul { list-style-type: square; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Projet VLANs - Configuration et Sécurisation</h1>
-    </header>
-    <nav>
-        <a href="index.html">Retour à l'accueil</a>
-    </nav>
-    <div class="container">
-        <section id="about">
-            <h2>Enoncé du projet</h2>
-            <p>
-           Votre entreprise est en pleine croissance et doit emménager dans de nouveaux locaux plus grands. 
-Vous profitez de l'installation dans ces nouveaux locaux pour revoir la configuration du réseau et 
-améliorer la sécurité. 
-L’entreprise est constituée de cinq départements : 
-▪ Le service Relations Humaines (qui inclut la direction) (5 personnes) 
-▪ Le service comptabilité (3 personnes) ; 
-▪ Le service commercial (13 personnes) ; 
-▪ Les équipes opérationnelles (52 personnes) ; 
-▪ L’équipe informatique (2 personnes) <- c’est votre équipe ! 
-L’entreprise a aussi 3 départements sur un site distant  
-Le service R&D (9 personnes) ; 
-Le service des achats (27 personnes) ; 
-Le service SAV (7 personnes) ; 
-Le réseau de l’entreprise est sur 192.168.100.0/24 
-Le réseau distant est sur le 172.16.0.0/24 
-Le réseau intersites est sur le 10.0.0.0/8 
-A faire : 
-• Définir un plan d’adressage IP pour chaque site 
-• Faire un schéma sur draw.io  
-Et sur Cisco PacketTracer : 
-• Configurer les VLAN sur chaque site 
-• Configurer le routage InterVLAN sur chaque site 
-• Faire communiquer les deux sites via des « ping »
-            </p>
-        </section>
-        <section id="plan_adressage">
-            <h2>Plan d'adressage IP</h2>
-            <p>Ajoute ici ton plan d'adressage, ton schéma, etc.</p>
-        </section>
-        <section id="config_vlans">
-            <h2>Configuration des VLANs</h2>
-            <p>Explique ici comment tu as configuré les VLANs sur Cisco Packet Tracer, par exemple...</p>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2025 - Mon Portfolio TSSR</p>
-    </footer>
+    <h1>Projet de Configuration Réseau</h1>
+    <h2>Contexte</h2>
+    <p>Votre entreprise est en pleine croissance et doit emménager dans de nouveaux locaux plus grands. Vous profitez de l'installation dans ces nouveaux locaux pour revoir la configuration du réseau et améliorer la sécurité.</p>
+    
+    <h2>Départements</h2>
+    <ul>
+        <li><strong>Service Relations Humaines (inclut la direction)</strong> : 5 personnes</li>
+        <li><strong>Service comptabilité</strong> : 5 personnes</li>
+        <li><strong>Service commercial</strong> : 20 personnes</li>
+        <li><strong>Équipes opérationnelles</strong> : 49 personnes</li>
+        <li><strong>Équipe informatique</strong> : 3 personnes</li>
+    </ul>
+    
+    <h2>Site distant</h2>
+    <ul>
+        <li><strong>Service R&D</strong> : 11 personnes</li>
+        <li><strong>Service des achats</strong> : 31 personnes</li>
+        <li><strong>Service SAV</strong> : 6 personnes</li>
+    </ul>
+    
+    <h2>Plan d'adressage IP</h2>
+    <ul>
+        <li><strong>Réseau principal</strong> : 192.168.100.0/24</li>
+        <li><strong>Réseau distant</strong> : 172.16.0.0/24</li>
+        <li><strong>Réseau intersites</strong> : 10.0.0.0/8</li>
+    </ul>
+    
+    <h2>Tâches à réaliser</h2>
+    <ol>
+        <li>Définir un plan d’adressage IP pour chaque site</li>
+        <li>Faire un schéma réseau sur Draw.io</li>
+        <li>Configuration sur Cisco PacketTracer</li>
+        <ul>
+            <li>Configurer les VLAN sur chaque site</li>
+            <li>Configurer le routage InterVLAN sur chaque site</li>
+            <li>Faire communiquer les deux sites via des <code>ping</code></li>
+        </ul>
+    </ol>
 </body>
 </html>
