@@ -2,30 +2,150 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-    <title>Affichage LaTeX dans HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan d'Adressage IP</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        caption {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Affichage de LaTeX dans une page HTML</h1>
-    <div id="latex-output">
-        $$ 
-        \begin{array}{|l|c|c|c|c|c|c|c|c|c|}
-        \hline
-        Département & Nb personnes & IP nécessaires & VLAN & Plage IP & Masque & 1ère IP & Dernière IP & Routeur & Broadcast \\
-        \hline
-        RH     & 5  & 16 & VLAN 10 & 192.168.100.0/28   & 255.255.255.240 & 192.168.100.1  & 192.168.100.14  & 192.168.100.1  & 192.168.100.15 \\
-        Compta & 5  & 16 & VLAN 20 & 192.168.100.16/28  & 255.255.255.240 & 192.168.100.17 & 192.168.100.30  & 192.168.100.17 & 192.168.100.31 \\
-        Com    & 20 & 32 & VLAN 30 & 192.168.100.32/27  & 255.255.255.224 & 192.168.100.33 & 192.168.100.62  & 192.168.100.33 & 192.168.100.63 \\
-        EOP    & 49 & 64 & VLAN 40 & 192.168.100.64/26  & 255.255.255.192 & 192.168.100.65 & 192.168.100.126 & 192.168.100.65 & 192.168.100.127 \\
-        IT     & 3  & 8  & VLAN 50 & 192.168.100.128/29 & 255.255.255.248 & 192.168.100.129 & 192.168.100.134 & 192.168.100.129 & 192.168.100.135 \\
-        R\&D   & 11 & 16 & VLAN 60 & 172.16.0.0/28      & 255.255.255.240 & 172.16.0.1     & 172.16.0.14     & 172.16.0.1     & 172.16.0.15 \\
-        Achat  & 31 & 64 & VLAN 70 & 172.16.0.16/26     & 255.255.255.192 & 172.16.0.17    & 172.16.0.78     & 172.16.0.17    & 172.16.0.79 \\
-        SAV    & 6  & 16 & VLAN 80 & 172.16.0.80/28     & 255.255.255.240 & 172.16.0.81    & 172.16.0.94     & 172.16.0.81    & 172.16.0.95 \\
-        \hline
-        \end{array}
-        $$
-    </div>
+
+    <table>
+        <caption>Plan d'adressage IP par département</caption>
+        <thead>
+            <tr>
+                <th>Département</th>
+                <th>Nb personnes</th>
+                <th>IP nécessaires</th>
+                <th>VLAN</th>
+                <th>Plage IP</th>
+                <th>Masque</th>
+                <th>1ère IP</th>
+                <th>Dernière IP</th>
+                <th>Routeur</th>
+                <th>Broadcast</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>RH</td>
+                <td>5</td>
+                <td>16</td>
+                <td>VLAN 10</td>
+                <td>192.168.100.0/28</td>
+                <td>255.255.255.240</td>
+                <td>192.168.100.1</td>
+                <td>192.168.100.14</td>
+                <td>192.168.100.1</td>
+                <td>192.168.100.15</td>
+            </tr>
+            <tr>
+                <td>Compta</td>
+                <td>5</td>
+                <td>16</td>
+                <td>VLAN 20</td>
+                <td>192.168.100.16/28</td>
+                <td>255.255.255.240</td>
+                <td>192.168.100.17</td>
+                <td>192.168.100.30</td>
+                <td>192.168.100.17</td>
+                <td>192.168.100.31</td>
+            </tr>
+            <tr>
+                <td>Com</td>
+                <td>20</td>
+                <td>32</td>
+                <td>VLAN 30</td>
+                <td>192.168.100.32/27</td>
+                <td>255.255.255.224</td>
+                <td>192.168.100.33</td>
+                <td>192.168.100.62</td>
+                <td>192.168.100.33</td>
+                <td>192.168.100.63</td>
+            </tr>
+            <tr>
+                <td>EOP</td>
+                <td>49</td>
+                <td>64</td>
+                <td>VLAN 40</td>
+                <td>192.168.100.64/26</td>
+                <td>255.255.255.192</td>
+                <td>192.168.100.65</td>
+                <td>192.168.100.126</td>
+                <td>192.168.100.65</td>
+                <td>192.168.100.127</td>
+            </tr>
+            <tr>
+                <td>IT</td>
+                <td>3</td>
+                <td>8</td>
+                <td>VLAN 50</td>
+                <td>192.168.100.128/29</td>
+                <td>255.255.255.248</td>
+                <td>192.168.100.129</td>
+                <td>192.168.100.134</td>
+                <td>192.168.100.129</td>
+                <td>192.168.100.135</td>
+            </tr>
+            <tr>
+                <td>R&D</td>
+                <td>11</td>
+                <td>16</td>
+                <td>VLAN 60</td>
+                <td>172.16.0.0/28</td>
+                <td>255.255.255.240</td>
+                <td>172.16.0.1</td>
+                <td>172.16.0.14</td>
+                <td>172.16.0.1</td>
+                <td>172.16.0.15</td>
+            </tr>
+            <tr>
+                <td>Achat</td>
+                <td>31</td>
+                <td>64</td>
+                <td>VLAN 70</td>
+                <td>172.16.0.16/26</td>
+                <td>255.255.255.192</td>
+                <td>172.16.0.17</td>
+                <td>172.16.0.78</td>
+                <td>172.16.0.17</td>
+                <td>172.16.0.79</td>
+            </tr>
+            <tr>
+                <td>SAV</td>
+                <td>6</td>
+                <td>16</td>
+                <td>VLAN 80</td>
+                <td>172.16.0.80/28</td>
+                <td>255.255.255.240</td>
+                <td>172.16.0.81</td>
+                <td>172.16.0.94</td>
+                <td>172.16.0.81</td>
+                <td>172.16.0.95</td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
